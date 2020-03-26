@@ -19,4 +19,13 @@ final class Attachment
     private string $mime_type;
     private string $image_data;
     private float $size;
+
+    public function __construct()
+    {
+    }
+
+    private function getQueryString() : string
+    {
+
+    }
 }

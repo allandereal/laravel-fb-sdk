@@ -21,4 +21,13 @@ final class Message
     private array $tags;
     private string $sticker;
     private string $message;
+
+    public function __construct()
+    {
+    }
+
+    private function getQueryString() : string
+    {
+
+    }
 }

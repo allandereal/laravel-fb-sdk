@@ -27,4 +27,19 @@ final class Conversation
     private array $participants;
     private bool $is_subscribed;
     private string $name;
+
+    public function __construct()
+    {
+        return $this;
+    }
+
+    private function getQueryString() : string
+    {
+
+    }
+
+    private function getMessagesQueryString( string $attachments, string $shares ) : string
+    {
+
+    }
 }

@@ -15,4 +15,15 @@ final class Share
     private int $limit = 10;
     private string $name;
     private string $description;
+    private array $queryParams = [];
+
+    public function __construct( $queryParams = [] )
+    {
+        $this->queryParams = $queryParams;
+    }
+
+    private function getQueryString() : string
+    {
+
+    }
 }
