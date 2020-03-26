@@ -85,10 +85,10 @@
                 <div class="ml-3">Create Playlist</div>
             </div>
             <div class="mt-3">
-                <h1 class="font-extrabold text-xl">Favourites</h1>
-                <div class="mt-1 flex justify-between overflow-x-auto bars-hidden">
+                <h2 class="h-8 font-extrabold text-xl">Favourites</h2>
+                <div class="pt-1 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -97,8 +97,9 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80">
+                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-3 -mt-3 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">4</div>
                         </div>
                         <div class="mt-2 leading-tight">
                             <h3 class="font-bold text-xs text-gray-700 truncate">Global Pop</h3>
@@ -106,7 +107,7 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -115,7 +116,7 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1527769929977-c341ee9f2033?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -126,7 +127,7 @@
                 </div>
             </div>
             <div class="mt-3">
-                <h1 class="font-extrabold text-xl">Recently Added</h1>
+                <h2 class="font-extrabold text-xl">Recently Added</h2>
                 <div class="mt-1 pb-2 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-22">
                         <div class="w-20 h-20">
@@ -167,7 +168,7 @@
                 </div>
             </div>
             <div class="mt-3 pb-16">
-                <h1 class="font-extrabold text-xl">Your Playlist</h1>
+                <h2 class="font-extrabold text-xl">Your Playlist</h2>
                 <div class="mt-1 pb-2 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-28">
                         <div class="h-28 w-28">
