@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-4 px-2">
+        <div class="pt-4 px-2 bg-gray-50 sticky z-30" style="top: 74px;">
             <div class="pl-5 py-1 bg-gray-300 flex items-center justify-between rounded-full text-gray-500 sm:font-bold sm:text-sm text-xs font-bold">
                 <div>Recent</div>
                 <div>Songs</div>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3 pb-16">
+            <div class="mt-1 pb-16">
                 <h2 class="font-extrabold text-xl">Your Playlist</h2>
                 <div class="pt-4 -mt-3 pb-2 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-28">
