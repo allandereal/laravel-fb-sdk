@@ -20,7 +20,7 @@
 <!--<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.3/dist/alpine.js" defer></script>-->
 <div class="w-screen bg-gray-50">
     <div class="w-full h-full">
-        <div class="bg-gray-100 w-full sticky top-0">
+        <div class="bg-gray-100 w-full sticky top-0 z-50">
             <div class="flex items-center justify-between px-6 py-2 border-gray-200 border-b-2">
                 <div>
                     <h1 class="text-3xl font-bold tracking-tight">Library</h1>
@@ -99,7 +99,7 @@
                     <div class="ml-4 w-22">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80">
-                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">4</div>
+                            <div class="w-6 h-6 absolute top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">4</div>
                         </div>
                         <div class="mt-2 leading-tight">
                             <h3 class="font-bold text-xs text-gray-700 truncate">Global Pop</h3>
@@ -132,7 +132,7 @@
                     <div class="w-22">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
-                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">2</div>
+                            <div class="w-6 h-6 absolute top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">2</div>
                         </div>
                         <div class="mt-2 leading-tight">
                             <h3 class="font-bold text-xs text-gray-700 truncate">Deep Cuts</h3>
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>
-        <div class="fixed bottom-0 left-0 pt-3 p-2 bg-gray-200 w-full flex items-center justify-between px-6 text-xs font-semibold rounded-tl-lg rounded-tr-lg">
+        <div class="fixed bottom-0 left-0 pt-3 p-2 bg-gray-200 w-full flex items-center justify-between px-6 text-xs font-semibold rounded-tl-lg rounded-tr-lg z-50">
             <div class="flex flex-col items-center text-red-500">
                 <svg class="w-6 h-6" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g fill="currentColor">
