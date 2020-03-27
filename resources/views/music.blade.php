@@ -86,7 +86,7 @@
             </div>
             <div class="mt-3">
                 <h2 class="h-8 font-extrabold text-xl">Favourites</h2>
-                <div class="pt-1 flex justify-between overflow-x-auto bars-hidden">
+                <div class="pt-4 -mt-3 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-22">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
@@ -99,7 +99,7 @@
                     <div class="ml-4 w-22">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80">
-                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-3 -mt-3 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">4</div>
+                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">4</div>
                         </div>
                         <div class="mt-2 leading-tight">
                             <h3 class="font-bold text-xs text-gray-700 truncate">Global Pop</h3>
@@ -128,10 +128,11 @@
             </div>
             <div class="mt-3">
                 <h2 class="font-extrabold text-xl">Recently Added</h2>
-                <div class="mt-1 pb-2 flex justify-between overflow-x-auto bars-hidden">
+                <div class="pt-4 -mt-3 pb-2 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
+                            <div class="w-6 h-6 absolute z-50 top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">2</div>
                         </div>
                         <div class="mt-2 leading-tight">
                             <h3 class="font-bold text-xs text-gray-700 truncate">Deep Cuts</h3>
@@ -139,7 +140,7 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -148,7 +149,7 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -157,7 +158,7 @@
                         </div>
                     </div>
                     <div class="ml-4 w-22">
-                        <div class="w-20 h-20">
+                        <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
                         <div class="mt-2 leading-tight">
@@ -169,7 +170,7 @@
             </div>
             <div class="mt-3 pb-16">
                 <h2 class="font-extrabold text-xl">Your Playlist</h2>
-                <div class="mt-1 pb-2 flex justify-between overflow-x-auto bars-hidden">
+                <div class="pt-4 -mt-3 pb-2 flex justify-between overflow-x-auto bars-hidden">
                     <div class="w-28">
                         <div class="h-28 w-28">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
