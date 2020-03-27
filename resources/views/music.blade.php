@@ -49,9 +49,10 @@
                 </div>
             </div>
         </header>
-        <div class="mt-32 pt-5 px-6">
-            <div class="flex justify-between text-center">
-                <div class="flex items-center justify-center bg-gray-200 w-1/2 text-red-500 font-bold text-sm rounded-lg">
+        <div class="mt-32 pt-5">
+            <div class="px-6">
+                <div class="flex justify-between text-center">
+                    <div class="flex items-center justify-center bg-gray-200 w-1/2 text-red-500 font-bold text-sm rounded-lg">
                     <span class="inline-block">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g fill="currentColor">
@@ -61,37 +62,38 @@
                         </g>
                       </svg>
                     </span>
-                    <span class="inline-block ml-1">Play</span>
+                        <span class="inline-block ml-1">Play</span>
+                    </div>
+                    <div class="flex items-center justify-center bg-gray-200 py-2 w-1/2 ml-3 text-red-500 font-bold text-sm rounded-lg">
+                        <div class="">
+                            <svg class="w-4 h-4" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+                                    <g id="icon-shape">
+                                        <path d="M6.58578644,12.8284271 L4.41028736,15.0039262 C3.83091964,15.5832939 2.81955537,16 2.00104344,16 L0,16 L0,14 L2.00104344,14 C2.29046199,14 2.79273472,13.7930517 2.9960738,13.5897126 L5.17157288,11.4142136 L6.58578644,12.8284271 L6.58578644,12.8284271 Z M16,6 L13.9998075,6 C13.7100858,6 13.2055579,6.20865568 13.0039262,6.41028736 L10.8284271,8.58578644 L10.8284271,8.58578644 L9.41421356,7.17157288 L11.5897126,4.9960738 C12.1666986,4.41908781 13.1800499,4 13.9998075,4 L16,4 L16,1 L20,5 L16,9 L16,6 Z M16,16 L13.9998075,16 C13.1800499,16 12.1666986,15.5809122 11.5897126,15.0039262 L2.9960738,6.41028736 C2.79273472,6.20694828 2.29046199,6 2.00104344,6 L0,6 L0,4 L2.00104344,4 C2.81955537,4 3.83091964,4.41670608 4.41028736,4.9960738 L13.0039262,13.5897126 C13.2055579,13.7913443 13.7100858,14 13.9998075,14 L16,14 L16,11 L20,15 L16,19 L16,16 Z" id="Combined-Shape"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="ml-2">Shuffle</div>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center bg-gray-200 py-2 w-1/2 ml-3 text-red-500 font-bold text-sm rounded-lg">
-                    <div class="">
-                        <svg class="w-4 h-4" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-                                <g id="icon-shape">
-                                    <path d="M6.58578644,12.8284271 L4.41028736,15.0039262 C3.83091964,15.5832939 2.81955537,16 2.00104344,16 L0,16 L0,14 L2.00104344,14 C2.29046199,14 2.79273472,13.7930517 2.9960738,13.5897126 L5.17157288,11.4142136 L6.58578644,12.8284271 L6.58578644,12.8284271 Z M16,6 L13.9998075,6 C13.7100858,6 13.2055579,6.20865568 13.0039262,6.41028736 L10.8284271,8.58578644 L10.8284271,8.58578644 L9.41421356,7.17157288 L11.5897126,4.9960738 C12.1666986,4.41908781 13.1800499,4 13.9998075,4 L16,4 L16,1 L20,5 L16,9 L16,6 Z M16,16 L13.9998075,16 C13.1800499,16 12.1666986,15.5809122 11.5897126,15.0039262 L2.9960738,6.41028736 C2.79273472,6.20694828 2.29046199,6 2.00104344,6 L0,6 L0,4 L2.00104344,4 C2.81955537,4 3.83091964,4.41670608 4.41028736,4.9960738 L13.0039262,13.5897126 C13.2055579,13.7913443 13.7100858,14 13.9998075,14 L16,14 L16,11 L20,15 L16,19 L16,16 Z" id="Combined-Shape"></path>
+                <div class="mt-2 p-2 bg-gray-200 rounded-lg font-bold text-sm flex items-center justify-center text-red-500">
+                    <div>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g fill="currentColor">
+                                <g>
+                                    <path d="M15,9 L12,9 L12,11 L15,11 L15,14 L17,14 L17,11 L20,11 L20,9 L17,9 L17,6 L15,6 L15,9 Z M0,3 L10,3 L10,5 L0,5 L0,3 Z M0,11 L10,11 L10,13 L0,13 L0,11 Z M0,7 L10,7 L10,9 L0,9 L0,7 Z M0,15 L10,15 L10,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
                                 </g>
                             </g>
                         </svg>
                     </div>
-                    <div class="ml-2">Shuffle</div>
+                    <div class="ml-3">Create Playlist</div>
                 </div>
-            </div>
-            <div class="mt-2 p-2 bg-gray-200 rounded-lg font-bold text-sm flex items-center justify-center text-red-500">
-                <div>
-                    <svg class="w-5 h-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g fill="currentColor">
-                            <g>
-                                <path d="M15,9 L12,9 L12,11 L15,11 L15,14 L17,14 L17,11 L20,11 L20,9 L17,9 L17,6 L15,6 L15,9 Z M0,3 L10,3 L10,5 L0,5 L0,3 Z M0,11 L10,11 L10,13 L0,13 L0,11 Z M0,7 L10,7 L10,9 L0,9 L0,7 Z M0,15 L10,15 L10,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="ml-3">Create Playlist</div>
             </div>
             <div class="mt-3">
-                <h2 class="h-8 font-extrabold text-xl">Favourites</h2>
+                <h2 class="h-8 ml-6 font-extrabold text-xl">Favourites</h2>
                 <div class="pt-4 -mt-3 flex justify-between overflow-x-auto bars-hidden">
-                    <div class="w-22">
+                    <div class="w-22 ml-6">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
@@ -131,9 +133,9 @@
                 </div>
             </div>
             <div class="mt-3">
-                <h2 class="font-extrabold text-xl">Recently Added</h2>
+                <h2 class="ml-6 font-extrabold text-xl">Recently Added</h2>
                 <div class="pt-4 -mt-3 pb-2 flex justify-between overflow-x-auto bars-hidden">
-                    <div class="w-22">
+                    <div class="w-22 ml-6">
                         <div class="w-20 h-20 relative">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                             <div class="w-6 h-6 absolute top-0 right-0 -mr-2 -mt-2 bg-red-500 text-white rounded-full font-semibold text-xs border border-white border-solid leading-6 text-center align-middle">2</div>
@@ -173,9 +175,9 @@
                 </div>
             </div>
             <div class="mt-1 pb-16">
-                <h2 class="font-extrabold text-xl">Your Playlist</h2>
+                <h2 class="ml-6 font-extrabold text-xl">Your Playlist</h2>
                 <div class="pt-4 -mt-3 pb-2 flex justify-between overflow-x-auto bars-hidden">
-                    <div class="w-28">
+                    <div class="w-28 ml-6">
                         <div class="h-28 w-28">
                             <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=150&q=80">
                         </div>
