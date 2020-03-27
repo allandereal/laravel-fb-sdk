@@ -16,36 +16,40 @@
         }
     </style>
 </head>
-<body class="text-gray-900 antialiased font-sans">
+<body class="text-gray-900 bg-gray-50 antialiased font-sans">
 <!--<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.3/dist/alpine.js" defer></script>-->
 <div class="w-screen bg-gray-50">
     <div class="w-full h-full">
-        <div class="bg-gray-100 w-full sticky top-0 z-50">
-            <div class="flex items-center justify-between px-6 py-2 border-gray-200 border-b-2">
-                <div>
-                    <h1 class="text-3xl font-bold tracking-tight">Library</h1>
-                </div>
-                <div class="flex items-center justify-between text-xs">
-                    <div class="py-1 px-3 bg-red-500 rounded-full text-white font-bold">Sort</div>
-                    <div class="py-2 px-2 ml-2 bg-red-500 rounded-full text-white font-bold">
-                        <p class="tracking-tight leading-tight">&bull;&bull;&bull;</p>
+        <header class="w-full h-20 fixed top-0 z-50">
+            <div class="bg-gray-100 h-20" style="opacity: .95"></div>
+            <div class="w-full border-gray-200 border-b-2">
+                <div class="absolute top-0 w-full flex items-center justify-between px-6 py-3 bg-transparent">
+                    <div>
+                        <h1 class="text-3xl font-bold tracking-tight">Library</h1>
                     </div>
-                    <div class="ml-2">
-                        <img class="w-14 h-14 rounded-full shadow-inner" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80">
+                    <div class="flex items-center justify-between text-xs">
+                        <div class="py-1 px-3 bg-red-500 rounded-full text-white font-bold">Sort</div>
+                        <div class="py-2 px-2 ml-2 bg-red-500 rounded-full text-white font-bold">
+                            <p class="tracking-tight leading-tight">&bull;&bull;&bull;</p>
+                        </div>
+                        <div class="ml-2">
+                            <img class="w-14 h-14 rounded-full shadow-inner" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="pt-4 px-2 bg-gray-50 sticky z-30" style="top: 74px;">
-            <div class="pl-5 py-1 bg-gray-300 flex items-center justify-between rounded-full text-gray-500 sm:font-bold sm:text-sm text-xs font-bold">
-                <div>Recent</div>
-                <div>Songs</div>
-                <div>Artists</div>
-                <div>Albums</div>
-                <div class="px-3 py-1 bg-gray-400 text-white rounded-full mr-1">Playlists</div>
+            <div class="mt-4 px-2 w-full sticky relative z-30" style="top: 74px;">
+                <div class="bg-gray-300 h-9 w-auto rounded-full" style="opacity: .95"></div>
+                <div class="pl-5 pr-4 h-9 w-full absolute top-0 flex items-center justify-between rounded-full text-gray-500 sm:font-bold sm:text-sm text-xs font-bold">
+                    <div>Recent</div>
+                    <div>Songs</div>
+                    <div>Artists</div>
+                    <div>Albums</div>
+                    <div class="px-3 py-1 bg-gray-400 text-white rounded-full mr-1">Playlists</div>
+                </div>
             </div>
-        </div>
-        <div class="mt-4 px-6">
+        </header>
+        <div class="mt-32 pt-5 px-6">
             <div class="flex justify-between text-center">
                 <div class="flex items-center justify-center bg-gray-200 w-1/2 text-red-500 font-bold text-sm rounded-lg">
                     <span class="inline-block">
