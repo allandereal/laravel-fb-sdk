@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="mt-4 px-2">
-            <div class="pl-5 py-1 bg-gray-300 flex items-center justify-between rounded-full text-gray-500 sm:font-bold sm:text-sm text-xs font-semibold">
+            <div class="pl-5 py-1 bg-gray-300 flex items-center justify-between rounded-full text-gray-500 sm:font-bold sm:text-sm text-xs font-bold">
                 <div>Recent</div>
                 <div>Songs</div>
                 <div>Artists</div>
