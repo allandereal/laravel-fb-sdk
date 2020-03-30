@@ -21,3 +21,4 @@ Route::get('/music', function () {
     return view('music');
 });
 
+Route::resource('conversations', 'ConversationsController');
