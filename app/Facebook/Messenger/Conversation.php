@@ -57,9 +57,9 @@ final class Conversation extends Messenger
         return $this;
     }
 
-    public function fetch() : object
+    public function fetch(string $url = null) : object
     {
-        $url = "https://graph.facebook.com/v6.0/"
+        $url = $url ?? "https://graph.facebook.com/v6.0/"
             .$this->page_id.'/conversations?access_token='
             .$this->access_token.$this->getQueryString();
         return Http::get($url);

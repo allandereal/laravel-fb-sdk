@@ -17,22 +17,34 @@ class ConversationsController extends Controller
      */
     public function index()
     {
+       $conversations = $this->fetchFromApi();
+        $decoded = json_decode($conversations);
+        if (property_exists($decoded, 'error')) {
+            ddd($conversations);
+        }
+        if (isset($decoded->paging->next)) {
+            ddd(json_decode($this->fetchFromApi($decoded->paging->next)));
+        }
+    }
+
+    private function fetchFromApi(string $url = null) : string
+    {
+        if ($url) {
+            return Conversation::new()->fetch($url);
+        }
+
         $attachments = Attachment::new([], true)->setQueryModifiers(['limit' => 10]);
         $shares = Share::new([], true)->setQueryModifiers(['limit' => 10]);
-
         $messages = Message::new([], true)
             ->setQueryModifiers(['limit' => 5])
             ->setQueryConnections(['shares' => $shares, 'attachments' => $attachments]);
 
-        $conversations = new Conversation();
-        $conversations = $conversations
+        return Conversation::new([], true)
             ->setPageId('1094138310753000')
             ->setAccessToken(config('fb.access_token'))
             ->setQueryModifiers(['limit' => 10])
             ->setQueryConnections(['messages' => $messages])
             ->fetch();
-        if (property_exists($conversations, 'error')) ddd($conversations);
-        ddd($conversations);
     }
 
     /**
