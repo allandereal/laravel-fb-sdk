@@ -27,8 +27,8 @@ class ConversationsController extends Controller
         $conversations = new Conversation();
         $conversations = $conversations
             ->setPageId('1094138310753000')
-            ->setAccessToken('')
-            ->setQueryModifiers(['limit' => 30])
+            ->setAccessToken(config('fb.access_token'))
+            ->setQueryModifiers(['limit' => 10])
             ->setQueryConnections(['messages' => $messages])
             ->fetch();
         if (property_exists($conversations, 'error')) ddd($conversations);

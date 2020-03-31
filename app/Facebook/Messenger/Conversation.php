@@ -62,7 +62,7 @@ final class Conversation extends Messenger
         $url = "https://graph.facebook.com/v6.0/"
             .$this->page_id.'/conversations?access_token='
             .$this->access_token.$this->getQueryString();
-        return json_decode(Http::get($url));
+        return Http::get($url);
     }
 
     private function getQueryString() : string
