@@ -14,59 +14,35 @@ use phpDocumentor\Reflection\Types\Void_;
 
 final class Conversation extends Messenger
 {
-    private const MODIFIERS = ['limit'];
-    private const FIELDS = [
-        'id',
-        'limit',
-        'can_reply',
-        'link',
-        'message_count',
-        'is_subscribed',
-        'participants',
-        'former_participants',
-        'scoped_thread_key',
-        'senders',
-        'snippet',
-        'unread_count',
-        'updated_time',
-        'name',
-        'subject',
-        'wallpaper'
+    protected const MODIFIERS = ['limit'];
+    protected const FIELDS = [
+        'id' => 'int',
+        'limit' => 'int',
+        'can_reply' => 'bool',
+        'link' => 'string',
+        'message_count' => 'int',
+        'is_subscribed' => 'bool',
+        'participants' => 'array',
+        'former_participants' => 'array',
+        'scoped_thread_key' => 'string',
+        'senders' => 'array',
+        'snippet' => 'string',
+        'unread_count' => 'int',
+        'updated_time' => 'string',
+        'name' => 'string',
+        'subject' => 'string',
+        'wallpaper' => 'string'
     ];
-    private const CONNECTIONS = ['messages'];
-
-    private int $id;
-    private int $limit = 25;
-    private bool $can_reply;
-    private string $link;
-    private int $message_count;
-    private array $messages;
-    private array $participants;
-    private array $former_participants;
-    private string $wallpaper;
-    private string $updated_time;
-    private string $unread_count;
-    private string $subject;
-    private array $senders;
-    private string $scoped_thread_key;
-    private bool $is_subscribed;
-    private string $name;
-    private array $default_fields = ['id', 'link', 'updated_time'];
+    protected const CONNECTIONS = ['messages'];
     private string $access_token;
     private string $page_id;
-
     protected array $query_modifiers = [];
     protected array $query_fields = [];
     protected array $query_connections = [];
 
-    public function __construct(array $fields = [], bool $all_fields = false)
+    public static function new(array $fields = [], bool $all_fields = false) : self
     {
-        $fields = $all_fields ? self::FIELDS : $fields;
-        foreach ($fields as $field){
-            if (in_array($field, self::FIELDS, true)){
-                $this->query_fields[] = $field;
-            }
-        }
+        return new self($fields, $all_fields);
     }
 
     public function setAccessToken(string $access_token) : self
@@ -101,12 +77,6 @@ final class Conversation extends Messenger
         return empty($query_strings) ? '' : '&'.implode('&', $query_strings);
     }
 
-    public function setQueryFields(array $fields = []) : self
-    {
-        //?fields=can_reply,former_participants,id,is_subscribed,link,message_count,name,participants,scoped_thread_key,senders,subject,snippet,unread_count,updated_time,wallpaper,
-        //messages.limit(2){created_time,from,id,message,sticker,tags,to,attachments.limit(2){id,image_data,mime_type,name,size,video_data,file_url},shares.limit(2){description,id,link,name}}&limit=2
-    }
-
     public function setQueryModifiers(array $modifiers) : self
     {
         foreach ($modifiers as $key => $value){
@@ -117,19 +87,9 @@ final class Conversation extends Messenger
         return $this;
     }
 
-    public function setQueryConnections(array $connections) : self
+    public function getUpstreamQueryString(string $prefix) : string
     {
-        foreach ($connections as $name => $connection){
-            if (in_array($name, self::CONNECTIONS, true)){
-                $this->query_connections[] = $connection->getUpstreamQueryString($name);
-            }
-        }
-        return $this;
-    }
-
-    protected function getDefaultModifiers(): array
-    {
-        return self::MODIFIERS;
+        return $this->getQueryString();
     }
 
 }
