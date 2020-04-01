@@ -20,5 +20,8 @@ Route::get('/', function () {
 Route::get('/music', function () {
     return view('music');
 });
+Route::get('/tailwind-switch', function () {
+    return view('tailwind-switch', ['title' => 'Tailwind Switch']);
+});
 
 Route::resource('conversations', 'ConversationsController');
