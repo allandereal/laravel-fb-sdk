@@ -7,6 +7,7 @@ use App\Facebook\Messenger\Conversation;
 use App\Facebook\Messenger\Message;
 use App\Facebook\Messenger\Share;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class ConversationsController extends Controller
 {
@@ -17,32 +18,39 @@ class ConversationsController extends Controller
      */
     public function index()
     {
-       $conversations = $this->fetchFromApi();
-        $decoded = json_decode($conversations);
-        if (property_exists($decoded, 'error')) {
-            ddd($conversations);
-        }
-        if (isset($decoded->paging->next)) {
-            ddd(json_decode($this->fetchFromApi($decoded->paging->next)));
+       return view('index');
+    }
+
+    public static function updateEnv(string $variable, string $value)
+    {
+        //TODO also cater for env variables without quotes on values.
+        $file = base_path('.env');
+        $old = $variable.'="'.env($variable).'"';
+        $new = $variable.'="'.$value.'"';
+        if (file_exists($file)){
+            file_put_contents($file, str_replace($old, $new, file_get_contents($file)));
+            //Artisan::call('config:clear');
+            //Artisan::call('cache:clear');
+            Artisan::call('config:cache');
         }
     }
 
-    private function fetchFromApi(string $url = null) : string
+    public static function fetchFromApi(string $url = '') : string
     {
         if ($url) {
             return Conversation::new()->fetch($url);
         }
 
-        $attachments = Attachment::new([], true)->setQueryModifiers(['limit' => 10]);
-        $shares = Share::new([], true)->setQueryModifiers(['limit' => 10]);
+        $attachments = Attachment::new([], true)->setQueryModifiers(['limit' => 1000]);
+        $shares = Share::new([], true)->setQueryModifiers(['limit' => 1000]);
         $messages = Message::new([], true)
-            ->setQueryModifiers(['limit' => 5])
+            ->setQueryModifiers(['limit' => 1000_000])
             ->setQueryConnections(['shares' => $shares, 'attachments' => $attachments]);
 
         return Conversation::new([], true)
-            ->setPageId('1094138310753000')
+            ->setPageId(config('fb.page_id'))
             ->setAccessToken(config('fb.access_token'))
-            ->setQueryModifiers(['limit' => 10])
+            ->setQueryModifiers(['limit' => 1])
             ->setQueryConnections(['messages' => $messages])
             ->fetch();
     }

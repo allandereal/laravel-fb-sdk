@@ -8,7 +8,6 @@
 
 namespace App\Facebook\Messenger;
 
-
 use Illuminate\Support\Facades\Http;
 use phpDocumentor\Reflection\Types\Void_;
 

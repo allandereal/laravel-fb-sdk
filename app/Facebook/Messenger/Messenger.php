@@ -3,7 +3,6 @@
 
 namespace App\Facebook\Messenger;
 
-
 abstract class Messenger
 {
     public function __construct(array $fields = [], bool $all_fields = false)

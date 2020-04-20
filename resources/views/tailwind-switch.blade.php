@@ -13,11 +13,11 @@
         <label x-data="toggleSwitch(false)" class="relative inline-block w-16 h-9">
             <input :checked="isOn" id="on_off" name="on_off" class="opacity-0 w-0 h-0" type="checkbox">
             <span @click="changeStatus" :class="{ 'bg-blue-200': isOn, 'bg-gray-200': !isOn }" class="absolute cursor-pointer inset-0 rounded-full">
-                <span :class="{ 'translate-x-6 ml-1 bg-blue-500': isOn }" class="absolute inline-block left-0 top-0 w-9 h-9 bg-gray-500 rounded-full transition-all duration-300 transform"></span>
+                <span :class="{ 'translate-x-6 ml-1 bg-blue-500': isOn }" class="absolute left-0 top-0 w-9 h-9 bg-gray-500 rounded-full transition-all duration-300 transform"></span>
             </span>
         </label>
     </div>
-    <div class="ml-10">
+    <div class="ml-10 focus:w-32php">
         <label x-data="toggleSwitch(true)" class="relative inline-block w-16 h-10">
             <input :checked="isOn" id="on_off" name="on_off" class="opacity-0 w-0 h-0" type="checkbox">
             <span @click="changeStatus" :class="{ 'bg-blue-500': isOn, 'bg-gray-300': !isOn }" class="absolute cursor-pointer inset-0 p-1 rounded-full">
